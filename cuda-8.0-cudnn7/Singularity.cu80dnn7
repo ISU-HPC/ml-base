@@ -1,6 +1,10 @@
 bootstrap:docker
 From:nvidia/cuda:8.0-cudnn7-devel-centos7
 
+%labels
+
+AUTHOR Yasasvy Nanyam ynanyam@iastate.edu
+
 %environment
 
     LD_LIBRARY_PATH=/host-libs:/usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda-8.0/lib64:/usr/local/lib:/usr/local/lib64
