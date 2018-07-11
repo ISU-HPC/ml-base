@@ -47,11 +47,15 @@ AUTHOR Yasasvy Nanyam ynanyam@iastate.edu
             pygtk2 \
             cmake3 \
             boost \
-            boost-devel
+            boost-devel \
+            tkinter \
+            python36-tkinter
     yum clean all
+    
     rm -rf /var/cache/yum
-
 
     curl https://bootstrap.pypa.io/get-pip.py | python36
 
     pip3 --no-cache-dir install --upgrade pip
+    
+    ln -s /usr/bin/python36 /usr/bin/python3
