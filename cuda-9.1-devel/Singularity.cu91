@@ -1,5 +1,5 @@
 bootstrap:docker
-From:nvidia/9.1-cudnn7-devel-centos7
+From:nvidia/cuda:9.1-cudnn7-devel-centos7
 
 %environment
 
